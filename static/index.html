@@ -12,35 +12,36 @@
         <label>
             Тип питомца
             <select name="petType" required>
-                <option value="reptiles">Млекопитающие</option>
-                <option value="amphibians">Земноводные</option>
-                <option value="birds">Птицы</option>
-                <option value="insects">Насекомые</option>
-                <option value="fish">Рыбы</option>
+                <option value="cat">Кот</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
             </select>
         </label>
+        <br>
         <label>
-            <input type="radio" name="gender" value="man" required> Мужчина
+            <input type="radio" name="gender" value="boy" required> Мужчина
         </label>
+        <br>
         <label>
-            <input type="radio" name="gender" value="woman"> Женщина
+            <input type="radio" name="gender" value="girl"> Женщина
         </label>
+        <br>
         <label>
-            <input type="radio" name="gender" value="other"> Не решил еще
+            <input type="radio" name="gender" value="none"> Не решил еще
         </label>
+        <br>
         <label>Длина хвоста
             <input type="number" min="0" name="tailLength" placeholder="100500" required>
         </label>
+        <br>
         <label>Цвет глаз
             <input type="color" name="eyeColor" required>
         </label>
+        <br>
         <label>Имя
             <input type="text" name="name" placeholder="Введите имя" required>
         </label>
-        <button type="reset">Сбросить</button>
-        <button type="submit">Отправить</button>
-
-    <form method="POST" action="/pets/orders">
+        <br>
         <label>День рождения:
             <input type="date" name="dateOfBirth" required>
         </label>
@@ -57,24 +58,9 @@
             <textarea name="rules" rows="2", cols="20" required placeholder="Some rules"></textarea>
         </label>
         <br>
-        
-
-        <button type="submit">123</button>
+        <button type="reset">Сбросить</button>
+        <button type="submit">Отправить</button>
     </form>
 </main>
-<style>   
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input:not([type='checkbox']):not([type='radio']) {
-    display: block;
-}
-
-textarea {
-    vertical-align: top;
-}
-</style>
 </body>
 </html>
