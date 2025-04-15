@@ -9,8 +9,51 @@
 <main>
     <h1>Найди себе друга!</h1>
     <form method="post" action="/pets/orders">
-        <button type="submit">Клик</button>
+        <label>
+            Тип питомца
+            <select name="petType" required>
+                <option value="reptiles">Млекопитающие</option>
+                <option value="amphibians">Земноводные</option>
+                <option value="birds">Птицы</option>
+                <option value="insects">Насекомые</option>
+                <option value="fish">Рыбы</option>
+            </select>
+        </label>
+        <label>
+            <input type="radio" name="gender" value="man" required> Мужчина
+        </label>
+        <label>
+            <input type="radio" name="gender" value="woman"> Женщина
+        </label>
+        <label>
+            <input type="radio" name="gender" value="other"> Не решил еще
+        </label>
+        <label>Длина хвоста
+            <input type="number" min="0" name="tailLength" placeholder="100500" required>
+        </label>
+        <label>Цвет глаз
+            <input type="color" name="eyeColor" required>
+        </label>
+        <label>Имя
+            <input type="text" name="name" placeholder="Введите имя" required>
+        </label>
+        <button type="reset">Сбросить</button>
+        <button type="submit">Отправить</button>
     </form>
 </main>
+<style>   
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input:not([type='checkbox']):not([type='radio']) {
+    display: block;
+}
+
+textarea {
+    vertical-align: top;
+}
+</style>
 </body>
 </html>
