@@ -39,6 +39,27 @@
         </label>
         <button type="reset">Сбросить</button>
         <button type="submit">Отправить</button>
+
+    <form method="POST" action="/pets/orders">
+        <label>День рождения:
+            <input type="date" name="dateOfBirth" required>
+        </label>
+        <br>
+        <label>Email: 
+            <input type="email" name="email" required placeholder="hello@example.com">
+        </label>
+        <br>
+        <label>Номер телефона:
+            <input type="tel" name="phone" required placeholder="+70000000000">
+        </label>
+        <br>
+        <label>Правила:
+            <textarea name="rules" rows="2", cols="20" required placeholder="Some rules"></textarea>
+        </label>
+        <br>
+        
+
+        <button type="submit">123</button>
     </form>
 </main>
 <style>   
